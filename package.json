@@ -14,5 +14,13 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "Friend Finder - Node and Express Servers",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcGoesTurbo/Friend-Finder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bcGoesTurbo/Friend-Finder/issues"
+  },
+  "homepage": "https://github.com/bcGoesTurbo/Friend-Finder#readme"
 }

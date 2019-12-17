@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Friend Finder Pro</title>
+	<title>Friend Finder</title>
 
 	<!-- Link to the jQuery Library -->
-  	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
   	<!-- Including Font Awesome Icons -->
   	<script src="https://use.fontawesome.com/b38c8ed4c7.js"></script>
@@ -21,10 +21,7 @@
 	<!-- Compiled and minified Materialize JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
     
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -34,9 +31,7 @@
 				<i class="fa fa-address-book-o fa-5x" aria-hidden="true" id=logo-icon></i>
 				<a href="/" class="brand-logo" id="logo">Friend Finder</a>
 				<ul class="right hide-on-med-and-down" id="head-nav-links">
-					<li><a href="/survey">Survey</a></li>
-					<li><a href="/api/friends">API Friends List</a></li>
-					<li><a href="https://github.com/angrbrd/friend-finder">GitHub Repo</a></li>
+					<li><a href="https://github.com/bcGoesTurbo/Friend-Finder">GitHub Repo</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -67,9 +62,9 @@
 						<!-- Survey Questions -->
 						<div class="input-field col s12">
 							<h3>Question 1</h3>
-							<h5>Your mind is always buzzing with unexplored ideas and plans.</h5>
+							<h5>You have a drive to be the best person you can possibly be.</h5>
 							<select id="question1">
-								<option value="" disabled selected>Choose your option</option>
+								<option value="">Choose your option</option>
 								<option value="1">1 (Strongly Disagree)</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -80,9 +75,9 @@
 
 						<div class="input-field col s12">
 							<h3>Question 2</h3>
-							<h5>Generally speaking, you rely more on your experience than your imagination.</h5>
+							<h5>When going out to a restaurant you go to the same place.</h5>
 							<select id="question2">
-								<option value="" disabled selected>Choose your option</option>
+								<option value="">Choose your option</option>
 								<option value="1">1 (Strongly Disagree)</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -95,7 +90,7 @@
 							<h3>Question 3</h3>
 							<h5>You find it easy to stay relaxed and focused even when there is some pressure.</h5>
 							<select id="question3">
-								<option value="" disabled selected>Choose your option</option>
+								<option value="">Choose your option</option>
 								<option value="1">1 (Strongly Disagree)</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -108,7 +103,7 @@
 							<h3>Question 4</h3>
 							<h5>You rarely do something just out of sheer curiosity.</h5>
 							<select id="question4">
-								<option value="" disabled selected>Choose your option</option>
+								<option value="">Choose your option</option>
 								<option value="1">1 (Strongly Disagree)</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -119,7 +114,7 @@
 
 						<div class="input-field col s12">
 							<h3>Question 5</h3>
-							<h5>People can rarely upset you.</h5>
+							<h5>It takes a lot to get you angry.</h5>
 							<select id="question5">
 								<option value="" disabled selected>Choose your option</option>
 								<option value="1">1 (Strongly Disagree)</option>
@@ -132,9 +127,9 @@
 
 						<div class="input-field col s12">
 							<h3>Question 6</h3>
-							<h5>It is often difficult for you to relate to other people’s feelings.</h5>
+							<h5>When having a conversation, you make a conscious effort listen and not talk over the other person .</h5>
 							<select id="question6">
-								<option value="" disabled selected>Choose your option</option>
+								<option value="">Choose your option</option>
 								<option value="1">1 (Strongly Disagree)</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -145,9 +140,9 @@
 
 						<div class="input-field col s12">
 							<h3>Question 7</h3>
-							<h5>In a discussion, truth should be more important than people’s sensitivities.</h5>
+							<h5>I see my self as an outgoing person.</h5>
 							<select id="question7">
-								<option value="" disabled selected>Choose your option</option>
+								<option value="">Choose your option</option>
 								<option value="1">1 (Strongly Disagree)</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -158,9 +153,9 @@
 
 						<div class="input-field col s12">
 							<h3>Question 8</h3>
-							<h5>You rarely get carried away by fantasies and ideas.</h5>
+							<h5>I generally see the positive in most situations.</h5>
 							<select id="question8">
-								<option value="" disabled selected>Choose your option</option>
+								<option value="">Choose your option</option>
 								<option value="1">1 (Strongly Disagree)</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -171,9 +166,9 @@
 
 						<div class="input-field col s12">
 							<h3>Question 9</h3>
-							<h5>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h5>
+							<h5>I like animals.</h5>
 							<select id="question9">
-								<option value="" disabled selected>Choose your option</option>
+								<option value="">Choose your option</option>
 								<option value="1">1 (Strongly Disagree)</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -184,9 +179,9 @@
 
 						<div class="input-field col s12">
 							<h3>Question 10</h3>
-							<h5>You feel more energetic after spending time with a group of people.</h5>
+							<h5>I like to travel.</h5>
 							<select id="question10">
-								<option value="" disabled selected>Choose your option</option>
+								<option value="">Choose your option</option>
 								<option value="1">1 (Strongly Disagree)</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -207,26 +202,19 @@
 		</div>
 	</main>
 
-	<footer class="page-footer pink accent-2">
+	<footer class="page-footer grey accent-2">
 		<div class="container">
 			<div class="row">
 				<div class="col l6 s12">
 					<h5 class="white-text">Friend Finder App</h5>
-					<p class="grey-text text-lighten-4">Thank you for taking the brief survey. Your responses will be used for training purposes only :-].</p>
+					<p class="grey-text text-lighten-4">Thank you for taking the survey. Your responses will be used for training purposes only.</p>
 				</div>
-				<div class="col l4 offset-l2 s12">
-					<h5 class="white-text">Links</h5>
-					<ul>
-						<li><a class="grey-text text-lighten-3" href="/api/friends">API Friends List</a></li>
-						<li><a class="grey-text text-lighten-3" href="https://github.com/angrbrd/friend-finder">GitHub Repo</a></li>
-					</ul>
-				</div>
+				
 			</div>
 		</div>
 		<div class="footer-copyright">
 			<div class="container">
-				© 2017 angrbrd entertainment
-				<a class="grey-text text-lighten-4 right" href="https://github.com/angrbrd">Reference Work</a>
+				© 2019 bcGoesTurbo
 			</div>
 		</div>
 	</footer>
