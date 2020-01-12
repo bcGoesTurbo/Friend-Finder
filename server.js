@@ -5,7 +5,7 @@ var path = require('path');
 
 //creates express server and sets up a port
 var app = express();
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 3000;
 
 // Static files
 // needs to be called before the routes in order to work

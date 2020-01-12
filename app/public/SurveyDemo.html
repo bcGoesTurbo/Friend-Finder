@@ -3,14 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Friend Finder</title>
+  <title>FriendFinder</title>
 
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  
-  <!-- Link to the jQuery Library -->
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
+  <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
   <!-- Font Awesome Glyphicons -->
@@ -39,8 +36,7 @@
     <hr>
 
     <h3><strong>Question 1</strong></h3>
-    <h4> You have a drive to be the best person you can possibly be.
-      .</h4>
+    <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
     <select class="chosen-select" id="q1">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -51,7 +47,7 @@
     </select>
 
     <h3><strong>Question 2</strong></h3>
-    <h4>When going out to a restaurant you go to the same place.</h4>
+    <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
     <select class="chosen-select" id="q2">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -87,7 +83,7 @@
 
 
     <h3><strong>Question 5</strong></h3>
-    <h4>It takes a lot to get you angry.</h4>
+    <h4>People can rarely upset you.</h4>
     <select class="chosen-select" id="q5">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -99,7 +95,7 @@
 
 
     <h3><strong>Question 6</strong></h3>
-    <h4>When having a conversation, you make a conscious effort listen and not talk over the other person.</h4>
+    <h4>It is often difficult for you to relate to other people’s feelings.</h4>
     <select class="chosen-select" id="q6">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -111,7 +107,7 @@
 
 
     <h3><strong>Question 7</strong></h3>
-    <h4>I see my self as an outgoing person.</h4>
+    <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
     <select class="chosen-select" id="q7">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -122,7 +118,7 @@
     </select>
 
     <h3><strong>Question 8</strong></h3>
-    <h4>I generally see the positive in most situations.</h4>
+    <h4>You rarely get carried away by fantasies and ideas.</h4>
     <select class="chosen-select" id="q8">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -133,7 +129,7 @@
     </select>
 
     <h3><strong>Question 9</strong></h3>
-    <h4>I like animals.</h4>
+    <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
     <select class="chosen-select" id="q9">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -144,7 +140,7 @@
     </select>
 
     <h3><strong>Question 10</strong></h3>
-    <h4>I like to travel.</h4>
+    <h4>You feel more energetic after spending time with a group of people.</h4>
     <select class="chosen-select" id="q10">
       <option value=""></option>
       <option value="1">1 (Strongly Disagree)</option>
@@ -164,7 +160,7 @@
     <hr>
     <footer class="footer">
       <div class="container">
-        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/bcGoesTurbo/Friend-Finder">GitHub Repo</a></p>
+        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
       </div>
     </footer>
 
@@ -256,10 +252,8 @@
           ]
         };
 
-        var currentURL = window.location.origin;
-        
         // AJAX post the data to the friends API.
-        $.post(currentURL + "/api/friends", userData, function(data) {
+        $.post("/api/friends", userData, function(data) {
 
           // Grab the result from the AJAX post so that the best match's name and photo are displayed.
           $("#match-name").text(data.name);
