@@ -1,6 +1,6 @@
-<div align="center">
-<img src="https://github.com/bcGoesTurbo/Friend-Finder/app/public/img/ScreenShot.png" alt="Project logo"></img>
-</div>
+
+<!-- ![friend-finder-coverpage](https://github.com/bcGoesTurbo/Friend-Finder/blob/master/app/public/img/ScreenShot.PNG) -->
+
 
 # FriendFinder
 UWA Coding Boot Camp - Friend Finder - Assignment #13 (Node &amp; Express Server)
